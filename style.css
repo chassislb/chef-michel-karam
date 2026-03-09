@@ -1312,6 +1312,373 @@ textarea {
   transform: translateY(32px);
 }
 
+
+
+/* ---------- ABOUT PAGE ---------- */
+
+.hero-nav a[aria-current="page"],
+.mobile-hero-nav a[aria-current="page"] {
+  color: #f0d8b0;
+}
+
+.hero-nav a[aria-current="page"]::after {
+  width: 100%;
+}
+
+.about-hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(65, 46, 40, 0.78) 0%,
+      rgba(58, 41, 36, 0.82) 50%,
+      rgba(50, 36, 33, 0.86) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(74, 55, 49, 0.14) 0%,
+      rgba(45, 33, 31, 0.10) 100%
+    ),
+    url("assets/Backgrounds/stone-texture.jpg") center/cover no-repeat;
+  padding-top: 10px;
+  padding-bottom: 52px;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 16% 18%, rgba(200, 161, 114, 0.06), transparent 22%),
+    radial-gradient(circle at 82% 72%, rgba(255, 255, 255, 0.03), transparent 20%),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0.01) 100%
+    );
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+.about-hero .hero-header {
+  position: relative;
+  z-index: 5;
+}
+
+.about-hero-grid {
+  position: relative;
+  z-index: 4;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 380px;
+  align-items: center;
+  gap: 42px;
+  min-height: 300px;
+  padding-top: 18px;
+}
+
+.about-hero-text {
+  max-width: 620px;
+}
+
+.about-hero-text h1 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: clamp(2.35rem, 4vw, 4rem);
+  line-height: 0.98;
+  letter-spacing: 0.005em;
+  color: #d6b88c;
+  margin-bottom: 18px;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+}
+
+.about-hero-description {
+  max-width: 620px;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 1rem;
+  line-height: 1.9;
+  margin-bottom: 24px;
+}
+
+.about-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.hero-text-link {
+  color: #e6cfaa;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.74rem;
+  position: relative;
+}
+
+.hero-text-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 1px;
+  background: rgba(230, 207, 170, 0.46);
+}
+
+.about-hero-image {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-hero-image img {
+  width: 100%;
+  max-width: 380px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+.about-story-section {
+  padding-top: 92px;
+  padding-bottom: 92px;
+}
+
+.about-story-grid {
+  display: grid;
+  grid-template-columns: 380px minmax(0, 1fr);
+  gap: 56px;
+  align-items: center;
+}
+
+.about-story-image-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: 28px;
+  box-shadow: 0 16px 34px rgba(66, 45, 34, 0.12);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.26) 0%,
+    rgba(232, 220, 205, 0.42) 100%
+  );
+  border: 1px solid rgba(138, 106, 69, 0.16);
+}
+
+.about-story-image-frame::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(181, 140, 93, 0.16);
+  border-radius: 28px;
+  pointer-events: none;
+}
+
+.about-story-image-frame img {
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+}
+
+.about-story-content {
+  max-width: 760px;
+}
+
+.about-story-text {
+  color: #554941;
+  font-size: 1rem;
+  line-height: 1.95;
+  margin-bottom: 16px;
+}
+
+.about-story-signature {
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.about-story-signature span {
+  width: 88px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(138, 106, 69, 0.78) 0%,
+    rgba(138, 106, 69, 0.18) 100%
+  );
+}
+
+.about-story-signature p {
+  color: #8c6c44;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.philosophy-section {
+  overflow: hidden;
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 460px;
+  gap: 48px;
+  align-items: center;
+}
+
+.philosophy-copy {
+  max-width: 740px;
+}
+
+.philosophy-aside {
+  display: grid;
+  gap: 22px;
+}
+
+.philosophy-quote-card {
+  position: relative;
+  padding: 28px 28px 24px;
+  border: 1px solid rgba(200, 161, 114, 0.16);
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0.01) 100%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(200, 161, 114, 0.06) 0%,
+      rgba(200, 161, 114, 0.015) 100%
+    );
+}
+
+.philosophy-quote-mark {
+  font-family: var(--font-accent);
+  font-size: 4.4rem;
+  line-height: 0.7;
+  color: rgba(212, 177, 132, 0.42);
+  margin-bottom: 10px;
+}
+
+.philosophy-quote-text {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  line-height: 1.35;
+  color: #ead7b0;
+  max-width: 15ch;
+}
+
+.philosophy-image-large {
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow: var(--shadow-deep);
+}
+
+.philosophy-image-large img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  filter: saturate(0.88) brightness(0.92);
+}
+
+.strengths-section {
+  padding-top: 98px;
+  padding-bottom: 98px;
+}
+
+.strengths-intro {
+  max-width: 760px;
+  margin-inline: auto;
+}
+
+.strengths-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.strength-card {
+  position: relative;
+  min-height: 245px;
+  padding: 28px 26px 24px;
+  border: 1px solid rgba(138, 106, 69, 0.12);
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.42) 0%,
+      rgba(255, 255, 255, 0.18) 100%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(181, 140, 93, 0.05) 0%,
+      rgba(181, 140, 93, 0.01) 100%
+    );
+  box-shadow: 0 8px 22px rgba(77, 55, 47, 0.05);
+}
+
+.strength-number {
+  display: inline-block;
+  color: rgba(138, 106, 69, 0.55);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.72rem;
+  margin-bottom: 16px;
+}
+
+.strength-card h3 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 1.42rem;
+  line-height: 1.22;
+  color: #4f3f35;
+  margin-bottom: 12px;
+}
+
+.strength-card p {
+  color: #61554d;
+  font-size: 0.96rem;
+  line-height: 1.78;
+}
+
+.about-closing-section {
+  padding-top: 92px;
+  padding-bottom: 92px;
+}
+
+.about-closing-grid {
+  display: grid;
+  grid-template-columns: 1.02fr 0.98fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.about-closing-image {
+  overflow: hidden;
+  border-radius: 26px;
+  box-shadow: 0 14px 34px rgba(66, 45, 34, 0.12);
+}
+
+.about-closing-image img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+}
+
+.about-closing-copy {
+  max-width: 620px;
+}
+
+.about-closing-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
 /* ---------- RESPONSIVE ---------- */
 
 @media (max-width: 1260px) {
@@ -1335,6 +1702,21 @@ textarea {
 }
 
 @media (max-width: 1180px) {
+  .about-hero-grid {
+    grid-template-columns: minmax(0, 1fr) 340px;
+    gap: 34px;
+  }
+
+  .about-story-grid,
+  .philosophy-grid,
+  .about-closing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .strengths-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .hero-top-cta {
     display: none;
   }
@@ -1394,6 +1776,66 @@ textarea {
 }
 
 @media (max-width: 860px) {
+  .about-hero {
+    padding-bottom: 42px;
+  }
+
+  .about-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    min-height: auto;
+    padding-top: 10px;
+  }
+
+  .about-hero-text {
+    max-width: 100%;
+  }
+
+  .about-hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-hero-description {
+    max-width: 100%;
+    font-size: 0.98rem;
+  }
+
+  .about-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-text-link {
+    width: fit-content;
+  }
+
+  .about-hero-image {
+    justify-content: center;
+  }
+
+  .about-hero-image img {
+    max-width: 100%;
+    height: 280px;
+  }
+
+  .about-story-grid,
+  .philosophy-grid,
+  .about-closing-grid,
+  .strengths-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-story-image-frame img,
+  .philosophy-image-large img,
+  .about-closing-image img {
+    height: 420px;
+  }
+
+  .philosophy-quote-text {
+    max-width: 100%;
+    font-size: 1.32rem;
+  }
+
   .hero-nav-center {
     grid-template-columns: auto;
     justify-content: center;
@@ -1563,6 +2005,66 @@ textarea {
 }
 
 @media (max-width: 560px) {
+  .about-hero {
+    padding-bottom: 34px;
+  }
+
+  .about-hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .about-hero-description {
+    font-size: 0.94rem;
+    line-height: 1.8;
+  }
+
+  .about-story-section,
+  .strengths-section,
+  .about-closing-section {
+    padding-top: 74px;
+    padding-bottom: 74px;
+  }
+
+  .about-story-image-frame,
+  .about-closing-image,
+  .philosophy-image-large {
+    border-radius: 20px;
+  }
+
+  .about-story-image-frame img,
+  .philosophy-image-large img,
+  .about-closing-image img {
+    height: 340px;
+  }
+
+  .about-story-text,
+  .strength-card p {
+    font-size: 0.93rem;
+  }
+
+  .strength-card,
+  .philosophy-quote-card {
+    padding: 22px 20px;
+  }
+
+  .strength-card h3 {
+    font-size: 1.28rem;
+  }
+
+  .philosophy-quote-text {
+    font-size: 1.18rem;
+  }
+
+  .about-closing-actions .btn,
+  .about-closing-actions .btn-light-outline,
+  .about-hero-actions .hero-outline-btn {
+    width: 100%;
+  }
+
+  .hero-text-link {
+    width: fit-content;
+  }
+
   .container {
     width: min(100% - 28px, var(--container));
   }
@@ -1698,699 +2200,4 @@ textarea {
   .footer-title {
     font-size: 2.2rem;
   }
-}
-/* =========================================================
-   ABOUT PAGE
-========================================================= */
-
-.hero-nav a[aria-current="page"],
-.mobile-hero-nav a[aria-current="page"] {
-  color: #f0d8b0;
-}
-
-.hero-nav a[aria-current="page"]::after {
-  width: 100%;
-}
-
-.inner-page-hero {
-  min-height: 480px;
-  max-height: none;
-  height: auto;
-}
-
-.about-page-hero {
-  background:
-    linear-gradient(
-      180deg,
-      rgba(74, 55, 49, 0.18) 0%,
-      rgba(45, 33, 31, 0.14) 100%
-    ),
-    linear-gradient(
-      90deg,
-      rgba(40, 29, 27, 0.88) 0%,
-      rgba(48, 35, 32, 0.82) 42%,
-      rgba(50, 36, 33, 0.78) 100%
-    ),
-    url("assets/Backgrounds/stone-texture.jpg") center/cover no-repeat;
-}
-
-.about-page-hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(26, 19, 18, 0.40) 0%,
-      rgba(26, 19, 18, 0.12) 45%,
-      rgba(26, 19, 18, 0.04) 100%
-    ),
-    url("assets/Chef/michel-karam-culinary-brigade-leadership.png") right 6% bottom / auto 90% no-repeat;
-  z-index: 1;
-  pointer-events: none;
-  opacity: 0.95;
-}
-
-.inner-page-hero .hero-shell-overlay {
-  z-index: 2;
-}
-
-.inner-page-hero .hero-header {
-  z-index: 5;
-}
-
-.inner-page-hero-stage {
-  position: relative;
-  z-index: 4;
-  min-height: 390px;
-  display: flex;
-  align-items: center;
-  padding: 48px 0 56px;
-}
-
-.inner-page-hero-copy {
-  max-width: 650px;
-  position: relative;
-  z-index: 5;
-}
-
-.inner-page-hero-copy h1 {
-  font-family: var(--font-heading);
-  font-weight: 500;
-  font-size: clamp(2.5rem, 4.8vw, 4.55rem);
-  line-height: 0.98;
-  letter-spacing: 0.005em;
-  color: #e1c39a;
-  margin-bottom: 20px;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.22);
-}
-
-.inner-page-hero-text {
-  max-width: 560px;
-  color: rgba(255, 255, 255, 0.84);
-  font-size: 1.02rem;
-  line-height: 1.85;
-  margin-bottom: 26px;
-}
-
-.inner-page-hero-actions {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  flex-wrap: wrap;
-}
-
-.hero-text-link {
-  color: #e6cfaa;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  font-size: 0.74rem;
-  position: relative;
-}
-
-.hero-text-link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  width: 100%;
-  height: 1px;
-  background: rgba(230, 207, 170, 0.46);
-}
-
-/* Biography */
-
-.about-story-section {
-  padding-top: 92px;
-  padding-bottom: 92px;
-}
-
-.about-story-grid {
-  display: grid;
-  grid-template-columns: 380px minmax(0, 1fr);
-  gap: 56px;
-  align-items: center;
-}
-
-.about-story-image-frame {
-  position: relative;
-  overflow: hidden;
-  border-radius: 28px;
-  box-shadow: 0 16px 34px rgba(66, 45, 34, 0.12);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.26) 0%,
-    rgba(232, 220, 205, 0.42) 100%
-  );
-  border: 1px solid rgba(138, 106, 69, 0.16);
-}
-
-.about-story-image-frame::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border: 1px solid rgba(181, 140, 93, 0.16);
-  border-radius: 28px;
-  pointer-events: none;
-}
-
-.about-story-image-frame img {
-  width: 100%;
-  height: 560px;
-  object-fit: cover;
-}
-
-.about-story-content {
-  max-width: 760px;
-}
-
-.about-story-text {
-  color: #554941;
-  font-size: 1rem;
-  line-height: 1.95;
-  margin-bottom: 16px;
-}
-
-.about-story-signature {
-  margin-top: 28px;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  flex-wrap: wrap;
-}
-
-.about-story-signature span {
-  width: 88px;
-  height: 1px;
-  background: linear-gradient(
-    90deg,
-    rgba(138, 106, 69, 0.78) 0%,
-    rgba(138, 106, 69, 0.18) 100%
-  );
-}
-
-.about-story-signature p {
-  color: #8c6c44;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-  font-size: 0.72rem;
-  font-weight: 700;
-}
-
-/* Philosophy */
-
-.philosophy-section {
-  overflow: hidden;
-}
-
-.philosophy-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 460px;
-  gap: 48px;
-  align-items: center;
-}
-
-.philosophy-copy {
-  max-width: 740px;
-}
-
-.philosophy-aside {
-  display: grid;
-  gap: 22px;
-}
-
-.philosophy-quote-card {
-  position: relative;
-  padding: 28px 28px 24px;
-  border: 1px solid rgba(200, 161, 114, 0.16);
-  background:
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.04) 0%,
-      rgba(255, 255, 255, 0.01) 100%
-    ),
-    linear-gradient(
-      135deg,
-      rgba(200, 161, 114, 0.06) 0%,
-      rgba(200, 161, 114, 0.015) 100%
-    );
-}
-
-.philosophy-quote-mark {
-  font-family: var(--font-accent);
-  font-size: 4.4rem;
-  line-height: 0.7;
-  color: rgba(212, 177, 132, 0.42);
-  margin-bottom: 10px;
-}
-
-.philosophy-quote-text {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  line-height: 1.35;
-  color: #ead7b0;
-  max-width: 15ch;
-}
-
-.philosophy-image-large {
-  overflow: hidden;
-  border-radius: 24px;
-  box-shadow: var(--shadow-deep);
-}
-
-.philosophy-image-large img {
-  width: 100%;
-  height: 520px;
-  object-fit: cover;
-  filter: saturate(0.88) brightness(0.92);
-}
-
-/* Strengths */
-
-.strengths-section {
-  padding-top: 98px;
-  padding-bottom: 98px;
-}
-
-.strengths-intro {
-  max-width: 760px;
-  margin-inline: auto;
-}
-
-.strengths-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-}
-
-.strength-card {
-  position: relative;
-  min-height: 245px;
-  padding: 28px 26px 24px;
-  border: 1px solid rgba(138, 106, 69, 0.12);
-  background:
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.42) 0%,
-      rgba(255, 255, 255, 0.18) 100%
-    ),
-    linear-gradient(
-      135deg,
-      rgba(181, 140, 93, 0.05) 0%,
-      rgba(181, 140, 93, 0.01) 100%
-    );
-  box-shadow: 0 8px 22px rgba(77, 55, 47, 0.05);
-}
-
-.strength-number {
-  display: inline-block;
-  color: rgba(138, 106, 69, 0.55);
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-size: 0.72rem;
-  margin-bottom: 16px;
-}
-
-.strength-card h3 {
-  font-family: var(--font-heading);
-  font-weight: 500;
-  font-size: 1.42rem;
-  line-height: 1.22;
-  color: #4f3f35;
-  margin-bottom: 12px;
-}
-
-.strength-card p {
-  color: #61554d;
-  font-size: 0.96rem;
-  line-height: 1.78;
-}
-
-/* Timeline */
-
-.timeline-section {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.timeline-intro {
-  max-width: 760px;
-  margin-inline: auto;
-}
-
-.timeline-list {
-  display: grid;
-  gap: 20px;
-  max-width: 1040px;
-  margin: 0 auto;
-}
-
-.timeline-item {
-  display: grid;
-  grid-template-columns: 170px minmax(0, 1fr);
-  gap: 22px;
-  align-items: stretch;
-}
-
-.timeline-year {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding-top: 24px;
-  color: #d4b184;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-  font-size: 0.74rem;
-  font-weight: 700;
-}
-
-.timeline-card {
-  position: relative;
-  padding: 24px 26px 24px 28px;
-  border: 1px solid rgba(200, 161, 114, 0.16);
-  background:
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.04) 0%,
-      rgba(255, 255, 255, 0.015) 100%
-    ),
-    linear-gradient(
-      135deg,
-      rgba(200, 161, 114, 0.06) 0%,
-      rgba(200, 161, 114, 0.015) 100%
-    );
-}
-
-.timeline-card::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 24px;
-  bottom: 24px;
-  width: 3px;
-  background: linear-gradient(
-    180deg,
-    rgba(212, 175, 55, 0.76) 0%,
-    rgba(212, 175, 55, 0.18) 100%
-  );
-}
-
-.timeline-card h3 {
-  font-family: var(--font-heading);
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 1.18;
-  color: #ecd8ae;
-  margin-bottom: 10px;
-}
-
-.timeline-card p {
-  max-width: 62ch;
-  color: rgba(255, 255, 255, 0.82);
-  font-size: 0.98rem;
-  line-height: 1.78;
-}
-
-/* Closing */
-
-.about-closing-section {
-  padding-top: 92px;
-  padding-bottom: 92px;
-}
-
-.about-closing-grid {
-  display: grid;
-  grid-template-columns: 1.02fr 0.98fr;
-  gap: 48px;
-  align-items: center;
-}
-
-.about-closing-image {
-  overflow: hidden;
-  border-radius: 26px;
-  box-shadow: 0 14px 34px rgba(66, 45, 34, 0.12);
-}
-
-.about-closing-image img {
-  width: 100%;
-  height: 520px;
-  object-fit: cover;
-}
-
-.about-closing-copy {
-  max-width: 620px;
-}
-
-.about-closing-actions {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  flex-wrap: wrap;
-  margin-top: 18px;
-}
-
-/* Responsive */
-
-@media (max-width: 1180px) {
-  .inner-page-hero {
-    min-height: auto;
-  }
-
-  .about-page-hero::after {
-    background:
-      linear-gradient(
-        90deg,
-        rgba(26, 19, 18, 0.34) 0%,
-        rgba(26, 19, 18, 0.12) 46%,
-        rgba(26, 19, 18, 0.04) 100%
-      ),
-      url("assets/Chef/michel-karam-culinary-brigade-leadership.png") right bottom / auto 78% no-repeat;
-  }
-
-  .about-story-grid,
-  .philosophy-grid,
-  .about-closing-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .strengths-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .timeline-item {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  .timeline-year {
-    padding-top: 0;
-  }
-}
-
-@media (max-width: 860px) {
-  .inner-page-hero-stage {
-    min-height: auto;
-    padding: 34px 0 42px;
-  }
-
-  .about-page-hero::after {
-    background:
-      linear-gradient(
-        180deg,
-        rgba(26, 19, 18, 0.18) 0%,
-        rgba(26, 19, 18, 0.06) 100%
-      );
-    opacity: 1;
-  }
-
-  .inner-page-hero-copy {
-    max-width: 100%;
-  }
-
-  .inner-page-hero-copy h1 {
-    font-size: 2.5rem;
-  }
-
-  .inner-page-hero-text {
-    max-width: 100%;
-    font-size: 0.98rem;
-  }
-
-  .inner-page-hero-actions {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .hero-text-link {
-    width: fit-content;
-  }
-
-  .about-story-grid,
-  .philosophy-grid,
-  .about-closing-grid,
-  .strengths-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .about-story-image-frame img,
-  .philosophy-image-large img,
-  .about-closing-image img {
-    height: 420px;
-  }
-
-  .philosophy-quote-text {
-    max-width: 100%;
-    font-size: 1.32rem;
-  }
-}
-
-@media (max-width: 560px) {
-  .inner-page-hero-copy h1 {
-    font-size: 2rem;
-  }
-
-  .inner-page-hero-text {
-    font-size: 0.94rem;
-    line-height: 1.8;
-  }
-
-  .about-story-section,
-  .strengths-section,
-  .timeline-section,
-  .about-closing-section {
-    padding-top: 74px;
-    padding-bottom: 74px;
-  }
-
-  .about-story-image-frame,
-  .about-closing-image,
-  .philosophy-image-large {
-    border-radius: 20px;
-  }
-
-  .about-story-image-frame img,
-  .philosophy-image-large img,
-  .about-closing-image img {
-    height: 340px;
-  }
-
-  .about-story-text,
-  .timeline-card p,
-  .strength-card p {
-    font-size: 0.93rem;
-  }
-
-  .strength-card,
-  .timeline-card,
-  .philosophy-quote-card {
-    padding: 22px 20px;
-  }
-
-  .strength-card h3,
-  .timeline-card h3 {
-    font-size: 1.28rem;
-  }
-
-  .philosophy-quote-text {
-    font-size: 1.18rem;
-  }
-
-  .about-closing-actions .btn,
-  .inner-page-hero-actions .hero-outline-btn,
-  .about-closing-actions .btn-light-outline {
-    width: 100%;
-  }
-
-  .hero-text-link {
-    width: fit-content;
-  }
-}
-/* ABOUT HERO */
-
-.about-hero{
-  background:
-    linear-gradient(
-      90deg,
-      rgba(20,20,20,0.92) 0%,
-      rgba(20,20,20,0.85) 40%,
-      rgba(20,20,20,0.75) 100%
-    ),
-    url("assets/Backgrounds/stone-texture.jpg");
-    
-  background-size: cover;
-  background-position: center;
-  
-  padding-top:120px;
-  padding-bottom:60px;
-}
-
-/* GRID */
-
-.about-hero-grid{
-  display:grid;
-  grid-template-columns:1fr 420px;
-  align-items:center;
-  gap:50px;
-}
-
-/* TEXT */
-
-.about-hero-text{
-  max-width:520px;
-}
-
-.about-hero-text h1{
-  font-family:var(--font-heading);
-  font-size:44px;
-  color:#D4AF37;
-  margin-bottom:16px;
-}
-
-.about-hero-description{
-  color:#e3e3e3;
-  line-height:1.8;
-  margin-bottom:24px;
-  font-size:15px;
-}
-
-/* BUTTONS */
-
-.about-hero-actions{
-  display:flex;
-  gap:18px;
-}
-
-/* IMAGE */
-
-.about-hero-image{
-  display:flex;
-  justify-content:flex-end;
-}
-
-.about-hero-image img{
-  width:100%;
-  max-width:420px;
-  height:340px;
-  object-fit:cover;
-  border-radius:8px;
-  box-shadow:0 15px 40px rgba(0,0,0,0.35);
-}
-
-/* MOBILE */
-
-@media (max-width:900px){
-
-  .about-hero-grid{
-    grid-template-columns:1fr;
-    gap:30px;
-  }
-
-  .about-hero-image{
-    justify-content:center;
-  }
-
-  .about-hero-image img{
-    height:280px;
-  }
-
 }
