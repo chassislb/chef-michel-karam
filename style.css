@@ -2232,8 +2232,8 @@ textarea {
       rgba(50, 36, 33, 0.78) 100%
     ),
     url("assets/Backgrounds/stone-texture.jpg") center/cover no-repeat;
-  padding-top: 90px;
-  padding-bottom: 30px;
+  padding-top: 74px;
+  padding-bottom: 22px;
 }
 
 .services-hero::before {
@@ -2243,7 +2243,7 @@ textarea {
   background:
     linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0.035) 0%,
       rgba(255, 255, 255, 0.01) 100%
     );
   pointer-events: none;
@@ -2258,39 +2258,40 @@ textarea {
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 360px;
+  grid-template-columns: minmax(0, 1fr) 320px;
   align-items: center;
-  gap: 36px;
-  min-height: 260px;
+  gap: 28px;
+  min-height: 190px;
+  padding-top: 10px;
 }
 
 .services-hero-text {
-  max-width: 580px;
+  max-width: 560px;
 }
 
 .services-hero-text h1 {
   font-family: var(--font-heading);
   font-weight: 500;
-  font-size: clamp(2.35rem, 4vw, 3.9rem);
+  font-size: clamp(2.15rem, 3.8vw, 3.4rem);
   line-height: 1.02;
   letter-spacing: 0.005em;
   color: #e1c39a;
-  margin-bottom: 18px;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.2);
+  margin-bottom: 14px;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.18);
 }
 
 .services-hero-description {
   color: rgba(255, 255, 255, 0.84);
-  line-height: 1.82;
-  margin-bottom: 24px;
-  font-size: 1rem;
-  max-width: 35rem;
+  line-height: 1.72;
+  margin-bottom: 14px;
+  font-size: 0.97rem;
+  max-width: 33rem;
 }
 
 .services-hero-actions {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 14px;
   flex-wrap: wrap;
 }
 
@@ -2298,7 +2299,7 @@ textarea {
   color: #e6cfaa;
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  font-size: 0.74rem;
+  font-size: 0.72rem;
   position: relative;
 }
 
@@ -2319,13 +2320,13 @@ textarea {
 
 .services-hero-image img {
   width: 100%;
-  max-width: 360px;
-  height: 230px;
+  max-width: 320px;
+  height: 190px;
   object-fit: cover;
   object-position: center;
   border-radius: 8px;
-  border: 1px solid rgba(212, 175, 55, 0.25);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(212, 175, 55, 0.22);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.28);
 }
 
 /* INTRO */
@@ -2572,12 +2573,12 @@ textarea {
 
 @media (max-width: 900px) {
   .services-hero {
-    padding-top: 95px;
-    padding-bottom: 36px;
+    padding-top: 88px;
+    padding-bottom: 30px;
   }
 
   .services-hero-grid {
-    gap: 26px;
+    gap: 24px;
     min-height: auto;
   }
 
@@ -2587,7 +2588,7 @@ textarea {
 
   .services-hero-image img {
     max-width: 100%;
-    height: 250px;
+    height: 220px;
   }
 
   .services-card-grid,
@@ -2649,9 +2650,5 @@ textarea {
   .service-card p,
   .process-step p {
     font-size: 0.93rem;
-  }
-
-  .services-hero-actions .hero-outline-btn {
-    width: 100%;
   }
 }
