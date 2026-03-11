@@ -2214,9 +2214,7 @@ textarea {
   width: 100%;
 }
 
-/* SERVICES HERO
-   Same structure and spacing logic as ABOUT HERO
-*/
+/* SERVICES HERO */
 
 .services-hero {
   position: relative;
@@ -2234,8 +2232,8 @@ textarea {
       rgba(45, 33, 31, 0.10) 100%
     ),
     url("assets/Backgrounds/stone-texture.jpg") center/cover no-repeat;
-  padding-top: 10px;
-  padding-bottom: 52px;
+  padding-top: 8px;
+  padding-bottom: 34px;
 }
 
 .services-hero::before {
@@ -2263,34 +2261,34 @@ textarea {
   position: relative;
   z-index: 4;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 380px;
+  grid-template-columns: minmax(0, 1fr) 340px;
   align-items: center;
-  gap: 42px;
-  min-height: 300px;
-  padding-top: 18px;
+  gap: 36px;
+  min-height: 240px;
+  padding-top: 8px;
 }
 
 .services-hero-text {
-  max-width: 620px;
+  max-width: 520px;
 }
 
 .services-hero-text h1 {
   font-family: var(--font-heading);
   font-weight: 500;
-  font-size: clamp(2.35rem, 4vw, 4rem);
+  font-size: clamp(2.15rem, 3.5vw, 3.45rem);
   line-height: 0.98;
   letter-spacing: 0.005em;
   color: #d6b88c;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
 }
 
 .services-hero-description {
-  max-width: 620px;
+  max-width: 520px;
   color: rgba(255, 255, 255, 0.86);
-  font-size: 1rem;
-  line-height: 1.9;
-  margin-bottom: 24px;
+  font-size: 0.98rem;
+  line-height: 1.78;
+  margin-bottom: 16px;
 }
 
 .services-hero-actions {
@@ -2325,13 +2323,13 @@ textarea {
 
 .services-hero-image img {
   width: 100%;
-  max-width: 380px;
-  height: 300px;
+  max-width: 340px;
+  height: 240px;
   object-fit: cover;
   object-position: center;
   border-radius: 10px;
   border: 1px solid rgba(212, 175, 55, 0.25);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.32);
 }
 
 /* INTRO */
@@ -2578,14 +2576,14 @@ textarea {
 
 @media (max-width: 900px) {
   .services-hero {
-    padding-top: 10px;
-    padding-bottom: 42px;
+    padding-top: 8px;
+    padding-bottom: 34px;
   }
 
   .services-hero-grid {
-    gap: 28px;
+    gap: 24px;
     min-height: auto;
-    padding-top: 12px;
+    padding-top: 8px;
   }
 
   .services-hero-image {
@@ -2594,7 +2592,7 @@ textarea {
 
   .services-hero-image img {
     max-width: 100%;
-    height: 260px;
+    height: 240px;
   }
 
   .services-card-grid,
