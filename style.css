@@ -74,9 +74,9 @@ textarea {
 
 .hero-shell {
   position: relative;
-  height: 405px;
-  min-height: 405px;
-  max-height: 405px;
+  min-height: 520px;
+  height: 70vh;
+  max-height: 720px;
   overflow: hidden;
   background:
     linear-gradient(
@@ -248,7 +248,7 @@ textarea {
 .hero-stage {
   position: relative;
   z-index: 4;
-  height: calc(405px - 68px);
+  min-height: calc(70vh - 80px);
   display: grid;
   grid-template-columns: 44% 56%;
   align-items: center;
@@ -488,8 +488,8 @@ textarea {
 /* ---------- ABOUT PREVIEW ---------- */
 
 .about-preview-section {
-  padding-top: 34px;
-  padding-bottom: 34px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .about-preview-wrap {
@@ -640,8 +640,8 @@ textarea {
 /* ---------- SERVICES SHOWCASE ---------- */
 
 .services-showcase {
-  padding-top: 38px;
-  padding-bottom: 38px;
+  padding-top: 110px;
+  padding-bottom: 110px;
 }
 
 .services-heading {
@@ -1769,9 +1769,9 @@ textarea {
     height: 280px;
   }
 
-  .hero-figure {
-    right: 0;
-  }
+ .hero-figure {
+  right: -10px;
+  bottom: 0;
 }
 
 @media (max-width: 860px) {
@@ -4440,4 +4440,12 @@ textarea {
     font-size: 1.7rem;
     max-width: 100%;
   }
+}
+/* =========================================================
+   SECTION TRANSITION FIX (Paper → Stone)
+   Adds depth between light and dark sections
+========================================================= */
+
+.section-paper + .section-stone {
+  box-shadow: inset 0 40px 60px rgba(0,0,0,0.18);
 }
