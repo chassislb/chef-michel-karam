@@ -2334,7 +2334,7 @@ textarea {
     ),
     url("assets/Backgrounds/stone-texture.jpg") center/cover no-repeat;
   padding-top: 8px;
-  padding-bottom: 34px;
+  padding-bottom: 42px;
 }
 
 .services-hero::before {
@@ -2362,34 +2362,34 @@ textarea {
   position: relative;
   z-index: 4;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 340px;
+  grid-template-columns: minmax(0, 1fr) 360px;
   align-items: center;
-  gap: 36px;
-  min-height: 240px;
-  padding-top: 8px;
+  gap: 42px;
+  min-height: 270px;
+  padding-top: 14px;
 }
 
 .services-hero-text {
-  max-width: 520px;
+  max-width: 600px;
 }
 
 .services-hero-text h1 {
   font-family: var(--font-heading);
   font-weight: 500;
-  font-size: clamp(2.15rem, 3.5vw, 3.45rem);
+  font-size: clamp(2.25rem, 3.7vw, 3.65rem);
   line-height: 0.98;
   letter-spacing: 0.005em;
   color: #d6b88c;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
 }
 
 .services-hero-description {
-  max-width: 520px;
-  color: rgba(255, 255, 255, 0.86);
-  font-size: 0.98rem;
-  line-height: 1.78;
-  margin-bottom: 16px;
+  max-width: 560px;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 1rem;
+  line-height: 1.84;
+  margin-bottom: 18px;
 }
 
 .services-hero-actions {
@@ -2424,13 +2424,13 @@ textarea {
 
 .services-hero-image img {
   width: 100%;
-  max-width: 340px;
-  height: 240px;
+  max-width: 360px;
+  height: 260px;
   object-fit: cover;
   object-position: center;
-  border-radius: 10px;
-  border: 1px solid rgba(212, 175, 55, 0.25);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.32);
+  border-radius: 12px;
+  border: 1px solid rgba(212, 175, 55, 0.22);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.30);
 }
 
 /* INTRO */
@@ -2448,7 +2448,7 @@ textarea {
 }
 
 .services-intro-copy {
-  max-width: 760px;
+  max-width: 780px;
 }
 
 .services-intro-aside {
@@ -2458,20 +2458,21 @@ textarea {
 
 .services-intro-note {
   width: 100%;
-  max-width: 280px;
-  padding: 24px 22px;
+  max-width: 285px;
+  padding: 26px 24px;
   border: 1px solid rgba(138, 106, 69, 0.12);
   background:
     linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.48) 0%,
-      rgba(255, 255, 255, 0.2) 100%
+      rgba(255, 255, 255, 0.20) 100%
     ),
     linear-gradient(
       135deg,
       rgba(181, 140, 93, 0.04) 0%,
       rgba(181, 140, 93, 0.01) 100%
     );
+  box-shadow: 0 8px 20px rgba(77, 55, 47, 0.04);
 }
 
 .services-note-line {
@@ -2489,7 +2490,7 @@ textarea {
 
 .services-intro-note p {
   color: #5b4b41;
-  line-height: 1.8;
+  line-height: 1.82;
   font-size: 0.96rem;
 }
 
@@ -2512,8 +2513,8 @@ textarea {
 
 .service-card {
   position: relative;
-  min-height: 250px;
-  padding: 28px 26px 24px;
+  min-height: 272px;
+  padding: 30px 26px 24px;
   border: 1px solid rgba(200, 161, 114, 0.16);
   background:
     linear-gradient(
@@ -2526,6 +2527,14 @@ textarea {
       rgba(200, 161, 114, 0.06) 0%,
       rgba(200, 161, 114, 0.015) 100%
     );
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+  transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(212, 177, 132, 0.28);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.10);
 }
 
 .service-card-number {
@@ -2540,16 +2549,16 @@ textarea {
 .service-card h3 {
   font-family: var(--font-heading);
   font-weight: 500;
-  font-size: 1.46rem;
+  font-size: 1.42rem;
   line-height: 1.2;
   color: #ecd8ae;
   margin-bottom: 12px;
 }
 
 .service-card p {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 0.97rem;
-  line-height: 1.78;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.96rem;
+  line-height: 1.8;
 }
 
 /* PROCESS */
@@ -2583,7 +2592,7 @@ textarea {
 .process-step h3 {
   font-family: var(--font-heading);
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: 1.36rem;
   line-height: 1.2;
   color: #4f3f35;
   margin-bottom: 10px;
@@ -2592,14 +2601,14 @@ textarea {
 .process-step p {
   color: #61554d;
   font-size: 0.95rem;
-  line-height: 1.78;
+  line-height: 1.8;
 }
 
 /* SERVICES QUOTE BAND */
 
 .services-quote-band {
-  padding-top: 68px;
-  padding-bottom: 68px;
+  padding-top: 72px;
+  padding-bottom: 72px;
   overflow: hidden;
 }
 
@@ -2644,46 +2653,11 @@ textarea {
 .services-quote-text {
   font-family: var(--font-heading);
   font-weight: 500;
-  font-size: clamp(2rem, 3.1vw, 2.9rem);
-  line-height: 1.22;
+  font-size: clamp(1.9rem, 3vw, 2.75rem);
+  line-height: 1.24;
   color: #ead7b0;
-  max-width: 18ch;
-  margin: 0 auto 18px;
-}
-
-.services-quote-credit {
-  color: rgba(255, 255, 255, 0.66);
-  font-size: 0.9rem;
-  letter-spacing: 0.04em;
-}
-
-.services-quote-credit em {
-  font-style: italic;
-  color: rgba(255, 255, 255, 0.78);
-}
-
-@media (max-width: 560px) {
-  .services-quote-band {
-    padding-top: 54px;
-    padding-bottom: 54px;
-  }
-
-  .services-quote-lines {
-    margin-bottom: 18px;
-  }
-
-  .services-quote-lines span {
-    width: 48px;
-  }
-
-  .services-quote-text {
-    font-size: 1.7rem;
-    max-width: 100%;
-  }
-
-  .services-quote-credit {
-    font-size: 0.82rem;
-  }
+  max-width: 21ch;
+  margin: 0 auto;
 }
 
 /* AUDIENCE */
@@ -2819,7 +2793,8 @@ textarea {
 
   .services-intro-section,
   .services-process-section,
-  .services-audience-section {
+  .services-audience-section,
+  .services-quote-band {
     padding-top: 74px;
     padding-bottom: 74px;
   }
@@ -2847,7 +2822,21 @@ textarea {
   .process-step p {
     font-size: 0.93rem;
   }
+
+  .services-quote-lines {
+    margin-bottom: 18px;
+  }
+
+  .services-quote-lines span {
+    width: 48px;
+  }
+
+  .services-quote-text {
+    font-size: 1.7rem;
+    max-width: 100%;
+  }
 }
+
 /* =========================================================
    PORTFOLIO PAGE
 ========================================================= */
