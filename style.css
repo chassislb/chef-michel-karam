@@ -3524,6 +3524,18 @@ height:340px;
   margin: 12px auto 0;
 }
 
+@media (max-width: 560px) {
+  .awards-quote-section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .awards-quote-text-dark {
+    font-size: 1.4rem;
+    max-width: 100%;
+  }
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 1180px) {
