@@ -74,9 +74,9 @@ textarea {
 
 .hero-shell {
   position: relative;
-  min-height: 520px;
-  height: 70vh;
-  max-height: 720px;
+  height: 405px;
+  min-height: 405px;
+  max-height: 405px;
   overflow: hidden;
   background:
     linear-gradient(
@@ -120,6 +120,7 @@ textarea {
     );
   pointer-events: none;
 }
+
 .hero-header {
   position: relative;
   z-index: 5;
@@ -248,7 +249,7 @@ textarea {
 .hero-stage {
   position: relative;
   z-index: 4;
-  min-height: calc(70vh - 80px);
+  height: calc(405px - 68px);
   display: grid;
   grid-template-columns: 44% 56%;
   align-items: center;
@@ -256,7 +257,7 @@ textarea {
 }
 
 .hero-text-block {
-  max-width: 450px;
+  max-width: 500px;
   align-self: center;
   position: relative;
   z-index: 5;
@@ -278,8 +279,17 @@ textarea {
   line-height: 1.03;
   letter-spacing: 0.005em;
   color: #d6b88c;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+}
+
+.hero-subtext {
+  max-width: 460px;
+  color: rgba(245, 236, 224, 0.82);
+  font-size: 0.9rem;
+  line-height: 1.65;
+  margin-bottom: 22px;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.12);
 }
 
 .hero-outline-btn {
@@ -488,8 +498,8 @@ textarea {
 /* ---------- ABOUT PREVIEW ---------- */
 
 .about-preview-section {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 34px;
+  padding-bottom: 34px;
 }
 
 .about-preview-wrap {
@@ -640,8 +650,8 @@ textarea {
 /* ---------- SERVICES SHOWCASE ---------- */
 
 .services-showcase {
-  padding-top: 110px;
-  padding-bottom: 110px;
+  padding-top: 38px;
+  padding-bottom: 38px;
 }
 
 .services-heading {
@@ -1311,7 +1321,6 @@ textarea {
   opacity: 0;
   transform: translateY(32px);
 }
-
 
 /* ---------- ABOUT PAGE ---------- */
 
