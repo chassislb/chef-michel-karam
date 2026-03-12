@@ -1547,6 +1547,19 @@ textarea {
   max-width: 740px;
 }
 
+.philosophy-section .eyebrow {
+  color: rgba(214, 184, 140, 0.88);
+}
+
+.philosophy-section .section-title {
+  color: #ead7b0;
+  max-width: 18ch;
+}
+
+.philosophy-section .section-text {
+  color: rgba(230, 214, 194, 0.78);
+}
+
 .philosophy-aside {
   display: grid;
   gap: 22px;
