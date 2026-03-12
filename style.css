@@ -1324,8 +1324,6 @@ textarea {
 
 /* ---------- ABOUT PAGE ---------- */
 
-/* ---------- ABOUT PAGE ---------- */
-
 .hero-nav a[aria-current="page"],
 .mobile-hero-nav a[aria-current="page"] {
   color: #f0d8b0;
@@ -1467,31 +1465,26 @@ textarea {
   transition: 0.28s ease;
 }
 
+/* Hero outline style reused for closing buttons */
 .hero-outline-btn,
-.about-closing-section .btn-light-outline {
+.about-closing-section .btn-light-outline,
+.about-closing-section .btn-dark {
   border: 1px solid rgba(230, 207, 170, 0.34);
   color: #f0dcc0;
   background: rgba(255, 255, 255, 0.02);
+  box-shadow: none;
 }
 
 .hero-outline-btn:hover,
-.about-closing-section .btn-light-outline:hover {
+.about-closing-section .btn-light-outline:hover,
+.about-closing-section .btn-dark:hover {
   background: rgba(255, 255, 255, 0.05);
   border-color: rgba(230, 207, 170, 0.52);
+  color: #f4e4c9;
+  transform: none;
 }
 
-.about-closing-section .btn-dark {
-  background: #ecd8b5;
-  color: #2d2321;
-  border: 1px solid rgba(236, 216, 181, 0.55);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
-}
-
-.about-closing-section .btn-dark:hover {
-  transform: translateY(-2px);
-  background: #f1dfc0;
-}
-
+/* Text link button */
 .hero-text-link {
   color: #e6cfaa;
   text-transform: uppercase;
@@ -2308,6 +2301,7 @@ textarea {
     font-size: 2.2rem;
   }
 }
+
 /* =========================================================
    SERVICES PAGE
 ========================================================= */
