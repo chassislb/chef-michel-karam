@@ -150,7 +150,7 @@
 
               <div class="contact-info-item">
                 <span class="contact-info-label">WhatsApp</span>
-                <a href="https://wa.me/97332043979">+973 320 43979</a>
+                <a href="https://wa.me/97332043979" target="_blank" rel="noopener noreferrer">+973 320 43979</a>
               </div>
 
               <div class="contact-info-item">
@@ -162,65 +162,355 @@
             </div>
           </div>
 
-         <div class="contact-form-panel reveal">
- <form class="contact-form" action="https://formspree.io/f/xbdzkjdw" method="POST">
+          <div class="contact-form-panel reveal">
+            <form
+              class="contact-form"
+              action="https://formspree.io/f/xbdzkjdw"
+              method="POST"
+            >
+              <input type="hidden" name="_subject" value="Michel Karam Website Inquiry" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_next"
+                value="https://chassislb.github.io/chef-michel-karam/contact.html"
+              />
 
-  <!-- Formspree settings -->
-  <input type="hidden" name="_subject" value="Michel Karam Website Inquiry">
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_next" value="https://chassislb.github.io/chef-michel-karam/contact.html">
+              <input
+                type="text"
+                name="_gotcha"
+                tabindex="-1"
+                autocomplete="off"
+                style="display:none"
+              />
 
-  <!-- Honeypot spam protection -->
-  <input type="text" name="_gotcha" style="display:none">
+              <div class="contact-form-row">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your name" required />
+                </div>
 
-  <div class="contact-form-row">
-    <div class="form-group">
-      <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" placeholder="Your name" required>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="Your email" required />
+                </div>
+              </div>
+
+              <div class="contact-form-row">
+                <div class="form-group">
+                  <label for="company">Company / Brand</label>
+                  <input type="text" id="company" name="company" placeholder="Company or brand name" />
+                </div>
+
+                <div class="form-group">
+                  <label for="inquiry">Inquiry Type</label>
+                  <select id="inquiry" name="inquiry">
+                    <option value="">Select an inquiry type</option>
+                    <option>Executive Chef Opportunity</option>
+                    <option>Culinary Consulting</option>
+                    <option>Hospitality Project</option>
+                    <option>Professional Collaboration</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="7"
+                  placeholder="Tell us about your inquiry"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-light">Send Inquiry</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE BAND -->
+    <section class="section section-paper contact-quote-section">
+      <div class="container">
+        <div class="contact-quote-inner reveal">
+          <p class="eyebrow eyebrow-dark">Michel Karam</p>
+          <blockquote class="contact-quote-text">
+            Clarity, trust, and shared standards remain the best starting point for any serious collaboration.
+          </blockquote>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/Logo/michel-karam-hero-logo.png" alt="Michel Karam logo" />
+      </div>
+
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="awards.html">Awards</a>
+        <a href="press.html">Press</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <p class="footer-copy">© Michel Karam. All rights reserved.</p>
     </div>
+  </footer>
 
-    <div class="form-group">
-      <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" placeholder="Your email" required>
+  <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact | Michel Karam</title>
+  <meta
+    name="description"
+    content="Contact Michel Karam for executive chef opportunities, culinary consulting, hospitality collaborations, and professional inquiries."
+  />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700&family=Playfair+Display:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="contact-hero">
+    <header class="hero-header">
+      <div class="container hero-header-inner">
+        <div class="hero-nav-center">
+          <nav class="hero-nav hero-nav-left">
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+          </nav>
+
+          <a href="index.html" class="hero-brand" aria-label="Michel Karam Home">
+            <img src="assets/Logo/mk-monogram.png" alt="Michel Karam monogram" />
+          </a>
+
+          <nav class="hero-nav hero-nav-right">
+            <a href="awards.html">Awards</a>
+            <a href="press.html">Press</a>
+            <a href="contact.html" aria-current="page">Contact</a>
+          </nav>
+        </div>
+
+        <button
+          class="nav-toggle hero-mobile-toggle"
+          id="navToggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <div class="container">
+        <nav class="mobile-hero-nav" id="siteNav">
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="awards.html">Awards</a>
+          <a href="press.html">Press</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container contact-hero-grid">
+      <div class="contact-hero-text reveal">
+        <p class="hero-kicker">Get in Touch</p>
+        <h1>Contact</h1>
+        <p class="contact-hero-description">
+          For executive chef opportunities, culinary consulting, hospitality projects,
+          and professional inquiries, Michel Karam may be contacted directly.
+        </p>
+
+        <div class="contact-hero-actions">
+          <a href="#contact-form-section" class="hero-text-link">Send Inquiry</a>
+        </div>
+      </div>
+
+      <div class="contact-hero-image reveal">
+        <img
+          src="assets/Chef/michel-karam-executive-chef-awards-portrait.png"
+          alt="Michel Karam portrait"
+        />
+      </div>
     </div>
-  </div>
+  </section>
 
-  <div class="contact-form-row">
-    <div class="form-group">
-      <label for="company">Company / Brand</label>
-      <input type="text" id="company" name="company" placeholder="Company or brand name">
-    </div>
+  <main>
+    <!-- INTRO -->
+    <section class="section section-paper contact-intro-section">
+      <div class="container">
+        <div class="contact-intro-grid">
+          <div class="contact-intro-copy reveal">
+            <p class="eyebrow eyebrow-dark">Professional Inquiries</p>
+            <h2 class="section-title section-title-dark">
+              For opportunities aligned with serious hospitality standards
+            </h2>
 
-    <div class="form-group">
-      <label for="inquiry">Inquiry Type</label>
-      <select id="inquiry" name="inquiry">
-        <option value="">Select an inquiry type</option>
-        <option>Executive Chef Opportunity</option>
-        <option>Culinary Consulting</option>
-        <option>Hospitality Project</option>
-        <option>Professional Collaboration</option>
-        <option>Other</option>
-      </select>
-    </div>
-  </div>
+            <p class="section-text section-text-dark">
+              Michel Karam is available for selected executive chef opportunities,
+              culinary consulting engagements, hospitality projects, and professional collaborations.
+            </p>
 
-  <div class="form-group">
-    <label for="subject">Subject</label>
-    <input type="text" id="subject" name="subject" placeholder="Subject" required>
-  </div>
+            <p class="section-text section-text-dark">
+              Inquiries are best suited to environments that value structure, clarity,
+              disciplined execution, and long-term operational standards.
+            </p>
+          </div>
 
-  <div class="form-group">
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="7" placeholder="Tell us about your inquiry" required></textarea>
-  </div>
+          <div class="contact-intro-aside reveal">
+            <div class="contact-intro-note">
+              <span class="contact-note-line"></span>
+              <p>
+                Executive chef roles, culinary consulting, hospitality development,
+                and selected professional collaborations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <button type="submit" class="btn btn-light">Send Inquiry</button>
+    <!-- CONTACT DETAILS + FORM -->
+    <section class="section section-stone contact-main-section" id="contact-form-section">
+      <div class="container">
+        <div class="contact-main-grid">
+          <div class="contact-info-panel reveal">
+            <p class="eyebrow">Contact Details</p>
+            <h2 class="section-title">Start the conversation</h2>
 
-</form>
-</div>
-</div>
-</div>
-</section>
+            <p class="section-text">
+              For professional inquiries, use the contact details below or send a message
+              through the inquiry form.
+            </p>
+
+            <div class="contact-info-list">
+              <div class="contact-info-item">
+                <span class="contact-info-label">Email</span>
+                <a href="mailto:chefmichel@me.com">chefmichel@me.com</a>
+              </div>
+
+              <div class="contact-info-item">
+                <span class="contact-info-label">Phone</span>
+                <a href="tel:+9613575876">+961 3 575 876</a>
+              </div>
+
+              <div class="contact-info-item">
+                <span class="contact-info-label">WhatsApp</span>
+                <a href="https://wa.me/97332043979" target="_blank" rel="noopener noreferrer">+973 320 43979</a>
+              </div>
+
+              <div class="contact-info-item">
+                <span class="contact-info-label">Inquiry Types</span>
+                <p>
+                  Executive Chef Opportunities · Culinary Consulting · Hospitality Projects · Professional Collaborations
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-panel reveal">
+            <form
+              class="contact-form"
+              action="https://formspree.io/f/xbdzkjdw"
+              method="POST"
+            >
+              <input type="hidden" name="_subject" value="Michel Karam Website Inquiry" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_next"
+                value="https://chassislb.github.io/chef-michel-karam/contact.html"
+              />
+
+              <input
+                type="text"
+                name="_gotcha"
+                tabindex="-1"
+                autocomplete="off"
+                style="display:none"
+              />
+
+              <div class="contact-form-row">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your name" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="Your email" required />
+                </div>
+              </div>
+
+              <div class="contact-form-row">
+                <div class="form-group">
+                  <label for="company">Company / Brand</label>
+                  <input type="text" id="company" name="company" placeholder="Company or brand name" />
+                </div>
+
+                <div class="form-group">
+                  <label for="inquiry">Inquiry Type</label>
+                  <select id="inquiry" name="inquiry">
+                    <option value="">Select an inquiry type</option>
+                    <option>Executive Chef Opportunity</option>
+                    <option>Culinary Consulting</option>
+                    <option>Hospitality Project</option>
+                    <option>Professional Collaboration</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="7"
+                  placeholder="Tell us about your inquiry"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-light">Send Inquiry</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- QUOTE BAND -->
     <section class="section section-paper contact-quote-section">
