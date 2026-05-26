@@ -1,4 +1,20 @@
 User-agent: *
 Allow: /
+Disallow: /private/
+Disallow: /admin/
+Disallow: *.php
+Disallow: *.phtml
+Disallow: /cgi-bin/
 
+# Crawl delay to prevent server overload
+Crawl-delay: 1
+
+# Sitemaps
 Sitemap: https://chefmichelkaram.com/sitemap.xml
+
+# Allow specific search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /

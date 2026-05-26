@@ -18,8 +18,10 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://chefmichelkaram.com/portfolio">
   <meta property="og:image" content="https://chefmichelkaram.com/assets/Seafood/michel-karam-seafood-plating-sauce-action.jpg">
-
-  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Chef Michel Karam Portfolio" />
+  <meta name="twitter:image" content="https://chefmichelkaram.com/assets/Seafood/michel-karam-seafood-plating-sauce-action.jpg" />
   <meta name="twitter:title" content="Michel Karam Portfolio | Signature Dishes & Culinary Work">
   <meta name="twitter:description" content="Explore Michel Karam’s culinary portfolio, including signature dishes, seafood, meat, desserts, banquets, buffets, and live stations.">
   <meta name="twitter:image" content="https://chefmichelkaram.com/assets/Seafood/michel-karam-seafood-plating-sauce-action.jpg">
@@ -40,6 +42,42 @@
   />
 
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Culinary Portfolio",
+      "description": "Michel Karam's culinary portfolio featuring signature dishes, seafood, meat, desserts, banquets, buffets, and live stations",
+      "url": "https://chefmichelkaram.com/portfolio",
+      "publisher": {
+        "@type": "Person",
+        "name": "Michel Karam"
+      },
+      "image": "https://chefmichelkaram.com/assets/Seafood/michel-karam-seafood-plating-sauce-action.jpg"
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://chefmichelkaram.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Portfolio",
+          "item": "https://chefmichelkaram.com/portfolio"
+        }
+      ]
+    }
+  </script>
 </head>
 
 <body>

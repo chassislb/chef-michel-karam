@@ -18,8 +18,10 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://chefmichelkaram.com/services">
   <meta property="og:image" content="https://chefmichelkaram.com/assets/Chef/michel-karam-chef-collaboration-kitchen.png">
-
-  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Chef Michel Karam" />
+  <meta name="twitter:image" content="https://chefmichelkaram.com/assets/Chef/michel-karam-chef-collaboration-kitchen.png" />
   <meta name="twitter:title" content="Michel Karam Services | Culinary Consulting for Restaurants">
   <meta name="twitter:description" content="Culinary consulting services for restaurants, hotels, and hospitality brands, including menu development, kitchen operations, training, and pre-opening support.">
   <meta name="twitter:image" content="https://chefmichelkaram.com/assets/Chef/michel-karam-chef-collaboration-kitchen.png">
@@ -40,6 +42,54 @@
   />
 
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Culinary Consulting Services",
+      "description": "Executive-level culinary consulting services for restaurants, hotels, and hospitality brands",
+      "url": "https://chefmichelkaram.com/services",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Chef Michel Karam",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://chefmichelkaram.com/assets/Logo/mk-monogram.png"
+        }
+      },
+      "mainEntity": {
+        "@type": "Service",
+        "name": "Culinary Consulting",
+        "description": "Menu development, kitchen operations, brigade training, and pre-opening support",
+        "provider": {
+          "@type": "Person",
+          "name": "Michel Karam"
+        }
+      }
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://chefmichelkaram.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://chefmichelkaram.com/services"
+        }
+      ]
+    }
+  </script>
 </head>
 
 <body>
