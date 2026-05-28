@@ -4,17 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Redirect /index.html to / -->
   <script>
     if (window.location.pathname.endsWith("/index.html")) {
       window.location.replace("https://chefmichelkaram.com/");
     }
   </script>
 
-  <!-- Canonical -->
   <link rel="canonical" href="https://chefmichelkaram.com/" />
-
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="/favicon.png" />
   <link rel="shortcut icon" href="/favicon.png" />
   <link rel="icon" href="/assets/favicon/favicon.png" />
@@ -22,7 +18,7 @@
 
   <title>Chef Michel Karam | Executive Chef & Culinary Consultant | Fine Dining</title>
 
-  <meta name="description" content="Executive Chef Michel Karam — 25+ years of international culinary expertise in luxury hotels, resorts, and hospitality consulting. Specializing in menu development, kitchen operations, and culinary leadership." />
+  <meta name="description" content="Executive Chef Michel Karam — 25+ years of international culinary expertise. Specializing in menu development, kitchen operations, and culinary consulting for restaurants in Lebanon and the MENA region." />
   <meta name="keywords" content="Chef Michel Karam, executive chef Lebanon, culinary consultant, restaurant consultant, menu development, hospitality expert, fine dining, culinary consulting" />
   <meta name="author" content="Chef Michel Karam" />
   <meta name="theme-color" content="#1C1C1C" />
@@ -30,7 +26,7 @@
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Chef Michel Karam | Executive Chef & Culinary Consultant" />
-  <meta property="og:description" content="Executive Chef Michel Karam — 25+ years of international culinary expertise in luxury hotels, resorts, and hospitality consulting. Specializing in menu development, kitchen operations, and culinary leadership." />
+  <meta property="og:description" content="Executive Chef Michel Karam — 25+ years of international culinary expertise. Specializing in menu development, kitchen operations, and culinary consulting." />
   <meta property="og:url" content="https://chefmichelkaram.com/" />
   <meta property="og:site_name" content="Chef Michel Karam" />
   <meta property="og:image" content="https://chefmichelkaram.com/assets/Chef/DSC_0033.JPG" />
@@ -39,59 +35,46 @@
   <meta property="og:image:alt" content="Chef Michel Karam" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Chef Michel Karam | Executive Chef & Culinary Consultant" />
-  <meta name="twitter:description" content="Executive Chef Michel Karam — 25+ years of international culinary expertise in luxury hotels, resorts, and hospitality consulting." />
+  <meta name="twitter:description" content="Executive Chef Michel Karam — 25+ years of international culinary expertise. Specializing in menu development, kitchen operations, and culinary consulting." />
   <meta name="twitter:image" content="https://chefmichelkaram.com/assets/Chef/DSC_0033.JPG" />
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Lato:wght@300;400;700&family=Playfair+Display:wght@600;700;800&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Lato:wght@300;400;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
 
-  <!-- Preload important hero/logo assets -->
   <link rel="preload" as="image" href="assets/Logo/mk-monogram.png" />
 
-  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Structured Data -->
+  <!-- Fix: Make hero content visible immediately, not dependent on scroll reveal -->
+  <style>
+    .hero-text-block,
+    .hero-image-side {
+      opacity: 1 !important;
+      transform: none !important;
+      visibility: visible !important;
+    }
+  </style>
+
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Chef Michel Karam",
-      "description": "Executive Chef & Culinary Consultant with 25+ years of international experience",
+      "description": "Culinary Consultant with 25+ years of international experience",
       "url": "https://chefmichelkaram.com",
       "logo": "https://chefmichelkaram.com/assets/Logo/mk-monogram.png",
-      "sameAs": [],
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "Consulting"
       },
-      "areaServed": ["LB", "AE", "FR", "US"],
-      "knowsAbout": ["Culinary Consulting", "Menu Development", "Kitchen Operations", "Fine Dining", "Hospitality Management"]
-    }
-  </script>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://chefmichelkaram.com/"
-        }
-      ]
+      "areaServed": ["LB", "AE", "SA", "QA"],
+      "knowsAbout": ["Culinary Consulting", "Menu Development", "Kitchen Operations", "Restaurant Consulting"]
     }
   </script>
 </head>
 
 <body>
-  <!-- HERO / TOP SECTION -->
   <section class="hero-shell">
     <div class="hero-shell-overlay"></div>
 
@@ -144,8 +127,8 @@
     </header>
 
     <div class="container hero-stage">
-      <div class="hero-text-block reveal">
-        <p class="hero-kicker">Michel Karam · Executive Chef &amp; Culinary Consultant</p>
+      <div class="hero-text-block">
+        <p class="hero-kicker">Michel Karam · Culinary Consultant</p>
 
         <h1>
           Culinary Leadership
@@ -156,13 +139,13 @@
         </h1>
 
         <p class="hero-subtext">
-          More than 25 years of international experience across luxury hotels, destination resorts, and distinguished hospitality concepts, shaping kitchens that perform with clarity, consistency, and refined standards.
+          25 years of experience building kitchens that perform with consistency, clarity, and refined standards — across Lebanon and the MENA region.
         </p>
 
         <a href="services.html" class="hero-outline-btn">View Consulting Services</a>
       </div>
 
-      <div class="hero-image-side reveal" aria-hidden="true">
+      <div class="hero-image-side" aria-hidden="true">
         <div class="hero-figure"></div>
       </div>
     </div>
@@ -193,7 +176,7 @@
           </h2>
 
           <p class="about-copy">
-            Michel Karam is an Executive Chef and culinary consultant whose career spans luxury hotels, destination resorts, diplomatic institutions, and distinguished hospitality concepts across international markets.
+            Michel Karam is a culinary consultant with over 25 years of professional experience across international hospitality operations in the Middle East, Europe, and Asia.
           </p>
 
           <p class="about-copy">
@@ -226,7 +209,7 @@
           <div class="service-showcase-icon">⌂</div>
           <h3>Menu Development</h3>
           <p>
-            Menus shaped by concept, product identity, and operational clarity, designed to deliver both refinement and consistency in service.
+            Menus built around your kitchen's real capacity — structured for consistency, profitability, and a clear identity from the first dish to the last.
           </p>
         </article>
 
@@ -234,7 +217,7 @@
           <div class="service-showcase-icon">⌘</div>
           <h3>Brigade Training</h3>
           <p>
-            Team development rooted in discipline, technical clarity, and accountability, helping kitchens perform with confidence under pressure.
+            Team development rooted in discipline, technical clarity, and accountability — helping kitchens perform with confidence under pressure.
           </p>
         </article>
 
@@ -242,7 +225,7 @@
           <div class="service-showcase-icon">✦</div>
           <h3>Kitchen Systems</h3>
           <p>
-            Workflow refinement, station structure, and back-of-house organization designed to support stronger rhythm, control, and execution.
+            Workflow refinement, station structure, and back-of-house organization designed to reduce friction and support stronger execution every service.
           </p>
         </article>
 
@@ -250,7 +233,7 @@
           <div class="service-showcase-icon">▣</div>
           <h3>Concept Development</h3>
           <p>
-            Strategic culinary guidance for hotels, restaurants, and new ventures seeking a clearer identity, stronger structure, and long-term hospitality value.
+            Strategic culinary guidance for new restaurants and relaunches — clearer identity, stronger structure, and an operation built to last beyond opening day.
           </p>
         </article>
       </div>
@@ -319,14 +302,14 @@
 
         <article class="recognition-showcase-card reveal">
           <p class="recognition-label">Press</p>
-          <h3>Selected editorial features and published recognition highlighting Michel’s culinary philosophy, visibility, and leadership across hospitality environments.</h3>
+          <h3>Selected editorial features and published recognition highlighting Michel's culinary philosophy and leadership across hospitality environments.</h3>
           <a href="press.html" class="recognition-button">View Press</a>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Contact Showcase -->
+  <!-- Contact -->
   <section class="section contact-mockup-band">
     <div class="container">
       <div class="contact-mockup-panel">
@@ -339,7 +322,7 @@
             </div>
 
             <p class="contact-mockup-text">
-              Available for executive chef appointments, culinary consulting, hospitality development, and selected professional collaborations.
+              Available for culinary consulting, menu development, kitchen systems, and concept development for restaurants and bars in Lebanon and the MENA region.
             </p>
 
             <a href="contact.html" class="contact-mockup-button">Submit Inquiry</a>
@@ -364,12 +347,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <img
-          src="assets/Logo/michel-karam-hero-logo.png"
-          alt="Michel Karam logo"
-          loading="lazy"
-          decoding="async"
-        />
+        <img src="assets/Logo/michel-karam-hero-logo.png" alt="Michel Karam logo" loading="lazy" decoding="async" />
       </div>
 
       <div class="footer-links">
@@ -407,9 +385,7 @@
         © Michel Karam. All rights reserved.
         <br />
         Structured by
-        <a href="https://chassislb.com" target="_blank" rel="noopener" class="footer-credit-link">
-          Chassis
-        </a>
+        <a href="https://chassislb.com" target="_blank" rel="noopener" class="footer-credit-link">Chassis</a>
       </p>
     </div>
   </footer>
